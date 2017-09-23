@@ -29,6 +29,7 @@ x = tf.placeholder(tf.float32, [None, 784])
 
 # 初始化Weight权重矩阵和bias偏值矩阵,初值为0
 # 此处使用Variable初始化，它在模型训练迭代中是持久化的
+# 搭建简单神经网络，没有中间层，784的输入与10的输出全连接
 W = tf.Variable(tf.zeros([784, 10]))
 b = tf.Variable(tf.zeros([10]))
 
