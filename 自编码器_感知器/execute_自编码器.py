@@ -4,6 +4,15 @@ import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 
 
+# 说明：
+# 本段代码运行所展示出的自编码器效果，主要是将提取高维特征（输入->隐藏层）和重构（隐藏层->输出层）分开处理
+# 前提条件是将输入的标准数据用高斯噪声加以影响，使得自编码器展现出提取高维特征，屏蔽噪声信号的效果
+# 总体网络结构是三层：输入层，隐藏层，输出层
+# 输入层：由所读取的输入数据原型所决定，额外加上高斯噪声
+# 隐藏层：由操作者自定义神经元数目，一般少于输入层
+# 输出层：模型与输入数据原型完全一致，降噪
+# 最终通过计算loss值，来反应重构后的预测值与数据原值之间的差距大小，进而反应降噪效果
+
 # Xavier初始化器，让初始化的参数处于一个不低不高的水平
 def xavier_init(fan_in, fan_out, constant=1):
     low = -constant * np.sqrt(6.0 / (fan_in + fan_out))
@@ -120,8 +129,8 @@ batch_size = 128
 display_step = 1
 
 autoencoder = AdditiveGaussianNoiseAutoencoder(n_input=784, n_hidden=200, transfer_function=tf.nn.softplus,
-                  optimizer=tf.train.AdamOptimizer(learning_rate=0.001),
-                  scale=0.01)
+                                               optimizer=tf.train.AdamOptimizer(learning_rate=0.001),
+                                               scale=0.01)
 
 for epoch in range(training_epochs):
     avg_cost = 0
