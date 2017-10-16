@@ -22,19 +22,23 @@ def bias_variable(shape):
 
 # 卷积函数
 def conv2d(x, W):
-    # x是一个四维的tensor [batch, in_height, in_width, in_channels] 1.批次 2.图片高 3.图片宽 4.通道数：黑白为1，彩色为3
-    # W是一个滤波器/卷积核 [filter_height, filter_width, in_channels, out_channels] 1.滤波器高 2.滤波器宽 3.输入通道数 4.输出通道数
-    # 固定 strides[0] = strides[3] = 1， strides[1]代表x方向的步长，strides[2]代表y方向的步长
-    # padding= 'SAME' / 'VALID' ; SAME在外围适当补0 , VALID不填补0
+    '''
+    x是一个四维的tensor [batch, in_height, in_width, in_channels] 1.批次 2.图片高 3.图片宽 4.通道数：黑白为1，彩色为3
+    W是一个滤波器/卷积核 [filter_height, filter_width, in_channels, out_channels] 1.滤波器高 2.滤波器宽 3.输入通道数 4.输出通道数
+    固定 strides[0] = strides[3] = 1， strides[1]代表x方向的步长，strides[2]代表y方向的步长
+    padding= 'SAME' / 'VALID' ; SAME在外围适当补0 , VALID不填补0
+    '''
     return tf.nn.conv2d(x, W, strides=[1, 1, 1, 1], padding='SAME')
 
 
 # 池化函数
 def max_pool_2x2(x):
-    # x是一个四维的tensor [batch, in_height, in_width, in_channels] 1.批次 2.图片高 3.图片宽 4.通道数：黑白为1，彩色为3
-    # ksize是窗口大小 [1,x,y,1] , 固定ksize[0] = ksize[3] = 1 ,  ksize[1]代表x方向的大小 , ksize[2]代表y方向的大小
-    # 固定 strides[0] = strides[3] = 1， strides[1]代表x方向的步长，strides[2]代表y方向的步长
-    # padding= 'SAME' / 'VALID' ; SAME在外围适当补0 , VALID不填补0
+    '''
+    x是一个四维的tensor [batch, in_height, in_width, in_channels] 1.批次 2.图片高 3.图片宽 4.通道数：黑白为1，彩色为3
+    ksize是窗口大小 [1,x,y,1] , 固定ksize[0] = ksize[3] = 1 ,  ksize[1]代表x方向的大小 , ksize[2]代表y方向的大小
+    固定 strides[0] = strides[3] = 1， strides[1]代表x方向的步长，strides[2]代表y方向的步长
+    padding= 'SAME' / 'VALID' ; SAME在外围适当补0 , VALID不填补0
+    '''
     return tf.nn.max_pool(x, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 
 
@@ -83,7 +87,7 @@ h_fc1_drop = tf.nn.dropout(h_fc1, keep_prob)
 # 输入为1024个隐藏层神经元，输出层为10个数字可能结果
 W_fc2 = weight_variable([1024, 10])
 b_fc2 = bias_variable([10])
-
+# 将中间层与输出层10个结果全连接
 y_conv = tf.nn.softmax(tf.matmul(h_fc1_drop, W_fc2) + b_fc2)
 
 # 计算代价函数
