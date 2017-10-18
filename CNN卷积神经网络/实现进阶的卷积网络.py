@@ -1,3 +1,8 @@
+from cifar10 import cifar10, cifar10_input
+import tensorflow as tf
+import numpy as np
+import time
+
 '''
 数据集：
     进阶卷积网络使用的是CIFAR-10
@@ -10,10 +15,6 @@
     对图片数据集进行翻转剪切制造更多样本
     每层卷积池化后，添加了LRN层，增强了泛化能力，提高容错率
 '''
-from cifar10 import cifar10,cifar10_input
-import tensorflow as tf
-import numpy as np
-import time
 
 # 训练次数
 max_steps = 3000
