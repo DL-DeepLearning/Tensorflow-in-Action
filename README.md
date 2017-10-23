@@ -15,9 +15,9 @@
 
 ### 4 [TensorFlow实现自编码机和多层感知机](https://github.com/LittleHeap/TensorflowPractice/blob/master/自编码器_感知器)
 #### 4.1 自编码机简介
-#### 4.2 [TensorFlow实现自编码机](https://github.com/LittleHeap/TensorflowPractice/blob/master/自编码器_感知器/execute_自编码器.py)
+#### 4.2 [TensorFlow实现自编码器](https://github.com/LittleHeap/TensorflowPractice/blob/master/自编码器_感知器/execute_自编码器.py)
 #### 4.3 多层感知机简介
-#### 4.4 [TensorFlow实现多层感知机](https://github.com/LittleHeap/TensorflowPractice/blob/master/自编码器_感知器/execute_多层感知器.py)
+#### 4.4 [TensorFlow实现多层感知器](https://github.com/LittleHeap/TensorflowPractice/blob/master/自编码器_感知器/execute_多层感知器.py)
 
 ### 5 [TensorFlow实现卷积神经网络](https://github.com/LittleHeap/TensorflowPractice/blob/master/CNN卷积神经网络)
 #### 5.1 卷积神经网络简介
