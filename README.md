@@ -1,26 +1,26 @@
 # TensorflowPractice
 :cyclone: 《TensorFlow实战》 黄文坚 | 唐源 - 源代码讲解
 
-### 1 [TensorFlow基础]()
-#### 1.1 [TensorFlow概要]()
-#### 1.2 [TensorFlow编程模型简介]()
+### 1 TensorFlow基础
+#### 1.1 TensorFlow概要
+#### 1.2 TensorFlow编程模型简介
 
-### 2 [TensorFlow和其他深度学习框架对比]()
-#### 2.1 [主流深度学习框架对比]()
-#### 2.2 [各深度学习框架简介]()
+### 2 TensorFlow和其他深度学习框架对比
+#### 2.1 主流深度学习框架对比
+#### 2.2 各深度学习框架简介
 
-### 3 [TensorFlow第一步]()
-#### 3.1 [TensorFlow的编译与安装]()
+### 3 TensorFlow第一步
+#### 3.1 TensorFlow的编译与安装
 #### 3.2 [TensorFlow实现Softmax Regression识别手写数字]()
 
 ### 4 [TensorFlow实现自编码机和多层感知机]()
-#### 4.1 [自编码机简介]()
+#### 4.1 自编码机简介
 #### 4.2 [TensorFlow实现自编码机]()
-#### 4.3 [多层感知机简介]()
+#### 4.3 多层感知机简介
 #### 4.4 [TensorFlow实现多层感知机]()
 
 ### 5 [TensorFlow实现卷积神经网络]()
-#### 5.1 [卷积神经网络简介]()
+#### 5.1 卷积神经网络简介
 #### 5.2 [TensorFlow实现简单的卷积网络]()
 #### 5.3 [TensorFlow实现进阶的卷积网络]()
 
