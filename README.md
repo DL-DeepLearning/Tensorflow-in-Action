@@ -13,11 +13,11 @@
 #### 3.1 TensorFlow的编译与安装
 #### 3.2 [TensorFlow实现Softmax Regression识别手写数字](https://github.com/LittleHeap/TensorflowPractice/blob/master/SoftmaxRegression识别手写数字/execute_MNIST.py)
 
-### 4 [TensorFlow实现自编码机和多层感知机](https://github.com/LittleHeap/TensorflowPractice/blob/master/自编码器_感知机)
+### 4 [TensorFlow实现自编码机和多层感知机](https://github.com/LittleHeap/TensorflowPractice/blob/master/自编码器_感知器)
 #### 4.1 自编码机简介
-#### 4.2 [TensorFlow实现自编码机](https://github.com/LittleHeap/TensorflowPractice/blob/master/自编码器_感知机/execute_自编码机.py)
+#### 4.2 [TensorFlow实现自编码机](https://github.com/LittleHeap/TensorflowPractice/blob/master/自编码器_感知机/execute_自编码器.py)
 #### 4.3 多层感知机简介
-#### 4.4 [TensorFlow实现多层感知机](https://github.com/LittleHeap/TensorflowPractice/blob/master/自编码器_感知机/execute_多层感知机.py)
+#### 4.4 [TensorFlow实现多层感知机](https://github.com/LittleHeap/TensorflowPractice/blob/master/自编码器_感知机/execute_多层感知器.py)
 
 ### 5 [TensorFlow实现卷积神经网络](https://github.com/LittleHeap/TensorflowPractice/blob/master/CNN卷积神经网络)
 #### 5.1 卷积神经网络简介
